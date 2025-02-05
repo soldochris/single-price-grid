@@ -105,10 +105,42 @@ section{
 }
 
 .about{
-  background-color: hsla(179, 62%, 43%, 0.624);
+  background-color: hsla(179, 62%, 43%, 0.8);
 
   & p{
     width: 200px;
     color: var(--Light-Gray);
+  }
+}
+
+footer{
+  text-align: center;
+  font-size: 12px;
+  color: var(--Grayish-Blue);
+
+  & a{
+    text-decoration: none;
+    color: var(--Cyan);
+    font-weight: 700;
+
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: var(--Bright-Yellow);
+    }
+  }
+}
+
+@media(width > 430px){
+  body{
+    height: 100vh;
+  }
+  main{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .community{
+    grid-column: 1/span 2;
   }
 }
