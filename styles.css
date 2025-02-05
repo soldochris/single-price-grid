@@ -4,10 +4,111 @@
   --Light-Gray: hsl(204, 43%, 93%);
   --Grayish-Blue: hsl(218, 22%, 67%);
 }
+
 *{
   box-sizing: border-box;
 }
+
 body{
   font-size: 16px;
   font-family: "Karla", sans-serif;
+  background-color: var(--Light-Gray);
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+main{
+  max-width: 320px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 22px 0;
+  box-shadow: 1px 1px 16px rgb(0, 0, 0, .2);
+}
+
+section{
+  padding: 26px 24px;
+  color: #fff;
+
+  & h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  & p{
+    margin-bottom: 0;
+    line-height: 1.5;
+  }
+}
+
+.community{
+  background-color: #fff;
+
+  & h2{
+    color: var(--Cyan);
+  }
+
+  & .subheading-community{
+    color: var(--Bright-Yellow);
+    font-size: 16px;
+  }
+
+  & p{
+    color: var(--Grayish-Blue);
+  }
+}
+
+.subscription{
+  background-color: var(--Cyan);
+
+  & h2{
+    color: var(--Light-Gray);
+    margin-bottom: 16px;
+  }
+
+  & .price{
+    font-weight: 700;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+
+    & span{
+      font-size: 16px;
+      font-weight: 400;
+      color: var(--Light-Gray);
+    }
+  }
+
+  & .price-description{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    color: var(--Light-Gray);
+  }
+
+  button{
+    background-color: var(--Bright-Yellow);
+    border: none;
+    width: 100%;
+    padding: 14px 0;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, .2);
+    cursor: pointer;
+  }
+}
+
+.about{
+  background-color: hsla(179, 62%, 43%, 0.624);
+
+  & p{
+    width: 200px;
+    color: var(--Light-Gray);
+  }
 }
